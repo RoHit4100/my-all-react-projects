@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 function Form(props) {
   return (
@@ -8,7 +9,7 @@ function Form(props) {
       {!props.isRegistered && (
         <input type="password" placeholder="Confirm Password" />
       )}
-      <button type="submit">{props.isRegistered ? "Login" : "Register"}</button>
+      <Button >{props.isRegistered ? "Login" : "Register"}</Button>
     </form>
   );
 }
